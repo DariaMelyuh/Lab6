@@ -12,6 +12,7 @@ namespace Lab6__Адаптер_
 
         public TurkeyAdapter(Turkey turkey)
         {
+            ArgumentNullException.ThrowIfNull(turkey);
             this.turkey = turkey;
         }
 
